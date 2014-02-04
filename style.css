@@ -93,7 +93,7 @@ a:hover {
 	border: none;
 	/*border-bottom: 4px solid #026FB3;	*/
 	background-color: rgba(255,255,255,0.9);
-	
+
 	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
@@ -172,7 +172,7 @@ a:hover {
 	position: absolute!important;
 	height: 63px;
 	background-color: #75D0F3!important;
-	
+
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -350,12 +350,12 @@ a:hover {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);		
 }
 .platform_bg h3 {
-	
+
 }
 
 /* OUR APPS SLIDER UNIT */
 /* ############################ */
-	
+
 .apps_bg {
 	/*background-color: rgba(255,255,255,0.3);*/
 	padding-top: 5em;
@@ -562,7 +562,7 @@ a:hover {
 }
 .featured_wrapper {
 	margin-top: 2em;
-	
+
 }
 .featured_box {
 	position: relative;
@@ -698,7 +698,9 @@ a:hover {
 		width: 100%;
 	}
 }
-
+.apps_page_bg ul {
+	list-style-type: none;
+}
 /* APPS SINGLE DETAIL UNIT */ 
 /* ############################ */
 
@@ -706,6 +708,7 @@ a:hover {
 	background-color: #f1f1f1;	
 	padding-bottom: 1em;
 	padding-top: 2em;
+	margin-top: -3em;
 }
 
 .apps_detail_bg .apps_detail_icon {
@@ -728,17 +731,20 @@ a:hover {
 .app_link {
 	float: right;
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 5px;
+
 }
 .apps_description {
 	margin-top: 1em;
 	clear: both;
 }
+
 .apps_title_wrapper h1 {
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: 700;
 	font-size: 3em;
 	margin-bottom: 0;
+	margin-top: 0.7em;
 }
 
 @media(max-width:767px){
@@ -780,8 +786,11 @@ a:hover {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);	
 }
 .app_screenshots {
-	margin-right: 0.5em;
-	display: inline-block;
+	margin-right: 0.5em;	
+	display: inline;
+}
+.app_screenshots img {
+	
 }
 .gallery_box {
 	height: 240px;	
@@ -821,6 +830,21 @@ a:hover {
 } 
 .apps_screen_item .close {
 	font-size: 45px;
+	text-shadow: none;
+	color: white;
+}
+.apps_screen_item .modal-footer a {
+	color: white;	
+}
+.apps_screen_item .modal-footer .direction {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 84px;
+	/*background-color: red;*/
+}
+.apps_screen_item .modal-footer .direction i {
+	font-size: 2em;
 }
 .apps_screen_item .group_controls {
         display: block;
@@ -828,11 +852,21 @@ a:hover {
         margin: 0 auto;
         width: 215px;
 }
-.apps_screen_item .modal_dialog {
-}
 .app_screenshots img {
 	height: 100%;
+	border: 1px solid #ccc;	
 }
+.apps_screen_item .modal-dialog img {
+	border: 10px solid white;
+}
+@media (max-height: 660px) and (min-width: 400px){
+	.apps_screen_item .modal-dialog img {
+		width: auto;
+		height: 400px;		
+	}
+}
+
+
 @media (max-width: 768px) {
 	.apps_screen_item .modal-dialog {
 		width: auto;
@@ -1025,7 +1059,7 @@ a:hover {
 
 .single_banner {
 	width: 100%;	
-	margin-top: 1.5em;
+	/*margin-top: 1.5em;*/
 }
 @media (max-width: 768px) {
 	.single_banner {
@@ -1076,8 +1110,8 @@ a:hover {
 .blog_list_item {
 	margin-bottom: 1.2em;	
 }
-.blog_list_item h2 {
-	/*margin-bottom: 1em;*/
+.blog_list_item h2 {	
+	font-size: 2.5em;
 }
 .blog_list_item img {
 	margin-bottom: 2em;
@@ -1101,6 +1135,7 @@ a:hover {
 .date_blog h2 {
 	text-align: right; 
 	margin-bottom: 0.5em;
+	font-size: 1.5em!important;
 }
 .side_blog_list a {
 	font-weight: 700;
@@ -1119,7 +1154,7 @@ a:hover {
 	.date_blog h2 {
 		text-align: left!important;		
 	}
-	
+
 
 }
 @media (max-width: 992px) { 
@@ -1140,16 +1175,21 @@ a:hover {
 	width: 100%;
 	margin: 2em 0em;
 	border: 1px solid #c9c9c9;
+	height: auto;
 }
 
 .blog_single_wrap h5 {
 	color: #888;
 }
+.blog_single_wrap h2 .date_blog {
+
+}
 .blog_single_wrap h2 {
 	margin-bottom: 0.5em;
+	font-size: 2.5em;
 }
 .blog_single_wrap .thickline {
-	
+
 }
 .blog_single_wrap {
 	padding-bottom: 4em;
@@ -1159,7 +1199,7 @@ a:hover {
 	margin-bottom: 1em;
 }
 .blog_single_buffer {
-	margin-top: 5.5em;
+	margin-top: 4em;
 }
 .pagination_wrapper {
 	margin: 0 auto;
