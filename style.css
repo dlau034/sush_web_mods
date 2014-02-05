@@ -83,7 +83,9 @@ a:hover {
 	background-color: red;
 	height: 1px;
 }
-
+.no_fixed_size {
+	height: auto!important;
+}
 /* Over-rides */
 /* ############################ */
 
@@ -331,9 +333,8 @@ a:hover {
 	margin-top: 3em;
 }
 .platform_unit img {
-        width: 130px;
+        width: 115px;
         margin-bottom: 2em;
-        /*background-color: #75CFF2;*/
         background-color: #026FB2;
 }
 .platform_unit img:hover {
@@ -368,12 +369,12 @@ a:hover {
 }
 
 .apps_item {
-	/*border: 1px solid white;*/
+	height: 385px;
 }
 
 .apps_item > div  {
 	overflow: hidden;
-	/*height: 250px;*/
+	
 }
 .apps_item img {
 	width: 100%;
@@ -671,7 +672,12 @@ a:hover {
 .apps_page_item {
 	background-color: #e1e1e1;
 	margin: 1em 0;
-	border-radius: 0px;
+	height: 365px;
+	border: 1px solid #c1c1c1;
+	border-radius: 0;
+}
+.apps_page_item:hover {
+	background-color: #B1E2F5;
 }
 .apps_page_item h4 {
 	margin: 0;
@@ -693,9 +699,12 @@ a:hover {
 	font-weight: 400;
 	font-style: italic;
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 	.apps_page_bg .col-xs-6 {
 		width: 100%;
+	}
+	.apps_page_item {
+		height: 440px;
 	}
 }
 .apps_page_bg ul {
@@ -952,7 +961,7 @@ a:hover {
 }
 .sm_right_bg p {
 	margin-top: 1em;
-	text-align: right;
+	text-align: left;
 } 
 
 .sm_right_bg h2 {
@@ -962,6 +971,10 @@ a:hover {
 .sm_right_bg img {
 	margin-bottom: 1em;
 	margin: 0 auto;
+}
+.sm_right_bg .image_unit {
+	float: right;
+	margin-bottom: 2em;
 }
 
 
