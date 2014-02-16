@@ -216,20 +216,25 @@ a:hover {
 	right: 0;
 	display: block;
 }
-.hero_banner h1 {
-
-}
 .hero_banner span {
         /* background-color: rgba(0,0,0,0.6); */
         line-height: 1.25em;
-        /*float: left;*/
-        /*clear: both;*/
         color: white;
         font-weight: 700;
         font-family: 'PT Sans Narrow', sans-serif;
         font-size: 6em;
         text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 }        
+
+@media (max-width: 768px) {
+	.hero_banner span {
+		font-size: 4em;
+	}
+	.hero_banner h2 { 
+		font-size: 1.8em;
+	}
+}
+
 .hero_banner h2 {
         float: left;
         clear: both;                
@@ -368,8 +373,20 @@ a:hover {
 	text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 }
 
-.apps_item {
-	height: 385px;
+@media(max-width: 479px) {
+	.apps_item {	
+		min-height: 325px;
+	}
+}
+@media(min-width: 480px) and (max-width: 649px) {
+	.apps_item {	
+		min-height: 400px;
+	}
+}
+@media(min-width: 650px) and (max-width: 767px){
+	.apps_item {	
+		min-height: 500px;
+	}	
 }
 
 .apps_item > div  {
@@ -672,7 +689,7 @@ a:hover {
 .apps_page_item {
 	background-color: #e1e1e1;
 	margin: 1em 0;
-	height: 365px;
+	/*height: 365px;*/
 	border: 1px solid #c1c1c1;
 	border-radius: 0;
 }
@@ -697,18 +714,41 @@ a:hover {
 	margin-right: 0.3em;
 	margin-left: 0.3em;
 	font-weight: 400;
-	font-style: italic;
+	cursor: pointer;
+	color: white;
+	background-color: #026FB2;
+	padding: 4px 12px;
+	border-radius: 4px;
+	line-height: 2.1em;
 }
-@media (max-width: 400px) {
+.platform_tags span:active {
+	background-color: #75CFF2;
+}
+
+@media (max-width: 499px) {
 	.apps_page_bg .col-xs-6 {
 		width: 100%;
 	}
+}
+@media (min-width: 500px) and (max-width: 767px) {
 	.apps_page_item {
-		height: 440px;
+		height: 425px;
 	}
 }
-.apps_page_bg ul {
-	list-style-type: none;
+@media (min-width: 768px) and (max-width: 979px) {
+	.apps_page_item {
+		height: 330px;
+	}
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+	.apps_page_item {
+		height: 330px;
+	}
+}
+@media (min-width: 1200px) {
+	.apps_page_item {
+		height: 360px;
+	}
 }
 /* APPS SINGLE DETAIL UNIT */ 
 /* ############################ */
@@ -867,19 +907,24 @@ a:hover {
 }
 .apps_screen_item .modal-dialog img {
 	border: 10px solid white;
+	width: 100%;
 }
 @media (max-height: 660px) and (min-width: 400px){
 	.apps_screen_item .modal-dialog img {
 		width: auto;
-		height: 400px;		
+		height: 500px;		
+	}
+}
+@media (max-width: 767px) {
+	.apps_screen_item .modal-dialog {
+		margin: 10px 60px!important;
 	}
 }
 
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	.apps_screen_item .modal-dialog {
-		width: auto;
-		margin: 40px;	
+		width: 320px!important;
+
 	}
 }
 @media screen and (max-width: 400px) {
